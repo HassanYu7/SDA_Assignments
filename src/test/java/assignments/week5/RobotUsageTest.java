@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class task3 extends TestBase {
+public class RobotUsageTest extends TestBase {
 
 /*
    Go to Amazon
@@ -21,7 +21,7 @@ public class task3 extends TestBase {
 */
 
     @Test
-    public void test() throws AWTException, InterruptedException {
+    public void testRobotUsage() throws AWTException, InterruptedException {
         bot.navigate("https://www.amazon.sa/");
 
         Robot robot = new Robot();
