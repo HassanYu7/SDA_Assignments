@@ -1,7 +1,6 @@
 package assignments.week5;
 
 import assignments.TestBase;
-import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
@@ -9,14 +8,14 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class task6 extends TestBase {
+public class ScreenshotTests extends TestBase {
 
     // Go to amazon.com
     // Take Full Page Screenshot.
     // Take any spesific WebElement ScreenShot
 
     @Test
-    public void cookieOperations() throws IOException {
+    public void takeScreenshots() throws IOException {
         bot.navigate("https://www.amazon.com");
 
         File fullPageScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -28,6 +27,5 @@ public class task6 extends TestBase {
         FileHandler.copy(elementScreenshot,new File(".\\test-output\\screenshots\\elementScreenshot.png"));
 
     }
-
 
 }

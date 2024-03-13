@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" parallel="tests">
+
+    <test name="CombinedDragAndDropTests" >
+        <classes>
+
+            <class name="assignments.week5.DragAndDropTest">
+                <methods>
+                    <include name="testDragAndDrop"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
