@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Task2Suite" parallel="tests" thread-count="3">
+
+    <test name="ChromeTest">
+        <parameter name="target-browser" value="chrome"/>
+        <classes>
+            <class name="assignments.week6.Task2"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="target-browser" value="firefox"/>
+        <classes>
+            <class name="assignments.week6.Task2"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="target-browser" value="edge"/>
+        <classes>
+            <class name="assignments.week6.Task2"/>
+        </classes>
+    </test>
+
+</suite>
