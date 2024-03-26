@@ -26,7 +26,7 @@ public abstract class TestBase {
     Actions actions;
 
     @BeforeClass
-    public static void beforeAll(){
+    public static void beforeClass(){
         Configurator.initialize(null,"src/main/resources/properties/log4j2.properties");
         logger = LogManager.getLogger(TestBase.class.getName());
     }
