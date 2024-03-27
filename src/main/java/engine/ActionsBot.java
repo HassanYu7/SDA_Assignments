@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Wait;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 public class ActionsBot {
 
     private WebDriver driver;
@@ -40,6 +42,16 @@ public class ActionsBot {
             driver.findElement(locator).click();
             return true;
         });
+    }
+
+    public String getText(By locator) {
+        logger.info("Get test from: " + locator);
+        AtomicReference<String> actualText = new AtomicReference<>("");
+        wait.until(d -> {
+            actualText.set(driver.findElement(locator).getText());
+            return true;
+        });
+        return actualText.get();
     }
 
     public void dragAndDrop(By sourceLocator, By targetLocator) {
