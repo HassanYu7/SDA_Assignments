@@ -15,8 +15,7 @@ public class RegisterPage {
     private final By telephoneInput = By.id("input-telephone");
     private final By passwordInput = By.id("input-password");
     private final By passwordConfirmInput = By.id("input-confirm");
-    private final By yesNewsletterInput = By.xpath("//label[@for='input-newsletter-yes']");
-    private final By noNewsletterInput = By.id("input-newsletter-no");
+
     private final By agreeInput = By.xpath("//label[@for='input-agree']");
     private final By submitButton = By.xpath("//input[@type='submit']");
 
