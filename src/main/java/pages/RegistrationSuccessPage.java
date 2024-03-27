@@ -25,4 +25,8 @@ public class RegistrationSuccessPage {
     public String getSuccessfulMessageText() {
         return bot.getText(successMessage);
     }
+
+    public void validateMessage(){
+        assertEquals(bot.getText(successMessage),"Your Account Has Been Created!");
+    }
 }
