@@ -1,4 +1,4 @@
-package assignments.week7.tests;
+package assignments.week7.task1tests;
 
 import assignments.TestBase;
 import org.testng.annotations.Test;

@@ -4,7 +4,6 @@ import engine.ActionsBot;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static org.testng.AssertJUnit.assertEquals;
 
 public class RegistrationSuccessPage {
     private final String url = "https://ecommerce-playground.lambdatest.io/index.php?route=account/success";
